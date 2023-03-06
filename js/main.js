@@ -11,7 +11,7 @@ const options = {
     entries.forEach(function (entry) {
 
         if (entry.intersectionRatio > ratio){
-            entry.target.classList.add('reveal-visible')
+            entry.target.classList.remove('reveal')
             observer.unobserve(entry.target)
         } 
     })
